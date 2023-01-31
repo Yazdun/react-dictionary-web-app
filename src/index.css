@@ -1,3 +1,24 @@
+/* INCONSOLATA FONT FAMILY */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+/* INTER FONT FAMILY */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* LORA FONT FAMILY */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+/* TAILWIND UTILITY CLASSES */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* FONT FAMILIES */
+.font_inconsolata {
+  font-family: 'Inconsolata', monospace;
+}
+
+.font_inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.font_lora {
+  font-family: 'Lora', serif;
+}
