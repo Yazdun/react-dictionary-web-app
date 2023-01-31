@@ -3,9 +3,11 @@ import { Navigation } from './'
 
 export const Layout = () => {
   return (
-    <>
+    <div className="max-w-2xl m-auto">
       <Navigation />
-      <Outlet />
-    </>
+      <main className="p-5">
+        <Outlet />
+      </main>
+    </div>
   )
 }
