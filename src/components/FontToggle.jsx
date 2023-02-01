@@ -15,7 +15,7 @@ export const FontToggle = () => {
   useOnClickOutside(ref, () => setModal(false))
 
   return (
-    <div className="relative" ref={ref}>
+    <div className="md:relative" ref={ref}>
       <button className="flex items-center gap-2 capitalize" onClick={toggle}>
         <span className={font.className}>{font.fontCategory}</span>
         <GoChevronDown
