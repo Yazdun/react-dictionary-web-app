@@ -5,6 +5,8 @@ import { useOnClickOutside } from '../hooks'
 import { FontModal } from './FontModal'
 import { GoChevronDown } from 'react-icons/go'
 import cn from 'classnames'
+import { motion } from 'framer-motion'
+import { framer_font_text } from '../framer'
 
 export const FontToggle = () => {
   const [modal, setModal] = useState(false)
@@ -17,7 +19,15 @@ export const FontToggle = () => {
   return (
     <div className="relative" ref={ref}>
       <button className="flex items-center gap-2 capitalize" onClick={toggle}>
-        <span>{font.fontCategory}</span>
+        <AnimatePresence mode="wait" initial={false}>
+          <motion.span
+            {...framer_font_text}
+            key={font.fontCategory}
+            className={font.className}
+          >
+            {font.fontCategory}
+          </motion.span>
+        </AnimatePresence>
         <GoChevronDown
           className={cn(
             'text-lg text-primary-100 transition-all duration-300',
