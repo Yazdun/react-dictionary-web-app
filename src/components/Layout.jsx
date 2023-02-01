@@ -1,9 +1,13 @@
 import { Outlet } from 'react-router-dom'
 import { Navigation } from './'
+import cn from 'classnames'
+import { useFont } from '../context'
 
 export const Layout = () => {
+  const { font } = useFont()
+
   return (
-    <div className="max-w-2xl m-auto">
+    <div className={cn('max-w-2xl m-auto', font.className)}>
       <Navigation />
       <main className="p-5">
         <Outlet />
