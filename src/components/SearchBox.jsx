@@ -11,7 +11,7 @@ export const SearchBox = () => {
     clearTimeout(timer)
     const newTimer = setTimeout(() => {
       setWord(e.target.value)
-    }, 1000)
+    }, 500)
     setTimer(newTimer)
   }
 

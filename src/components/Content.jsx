@@ -1,15 +1,16 @@
 import React from 'react'
 import { useDictionary } from '../context'
+import { NotFound, NoWords } from './Status'
 
 export const Content = () => {
-  const { data, word } = useDictionary()
+  const { data, word, isLoading } = useDictionary()
 
   if (!word) {
-    return <div>Search something</div>
+    return <NoWords />
   }
 
   if (!data) {
-    return <div>not found</div>
+    return <NotFound />
   }
 
   return (
