@@ -27,7 +27,7 @@ export function FontProvider({ children }) {
   useEffect(
     () => {
       const fontFamily =
-        fontFamilies.find(item => item.fontName === font) || fontFamilies[0]
+        fontFamilies.find(item => item === font) || fontFamilies[0]
       document.documentElement.classList.add(fontFamily.className)
 
       const fontFamiliesToRemove = fontFamilies.filter(
