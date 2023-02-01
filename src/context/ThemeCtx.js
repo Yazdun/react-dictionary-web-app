@@ -1,5 +1,5 @@
 import { useContext, createContext } from 'react'
-import { useDarkMode } from '../../hooks'
+import { useDarkMode } from '../hooks'
 
 const ThemeContext = createContext()
 
