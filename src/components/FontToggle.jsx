@@ -1,3 +1,4 @@
+import { AnimatePresence } from 'framer-motion'
 import { useRef, useState } from 'react'
 import { useOnClickOutside } from '../hooks'
 import { FontModal } from './FontModal'
@@ -12,7 +13,9 @@ export const FontToggle = () => {
   return (
     <div className="relative" ref={ref}>
       <button onClick={toggle}>FontToggle</button>
-      {modal && <FontModal />}
+      <AnimatePresence initial={false} mode="wait">
+        {modal && <FontModal />}
+      </AnimatePresence>
     </div>
   )
 }
