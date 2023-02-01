@@ -2,9 +2,10 @@ import { useFont } from '../context'
 import cn from 'classnames'
 import { motion } from 'framer-motion'
 import { framer_modal } from '../framer'
+import { BsCheckLg } from 'react-icons/bs'
 
 export const FontModal = () => {
-  const { fontFamilies, setFont } = useFont()
+  const { fontFamilies, setFont, font } = useFont()
   return (
     <motion.ul
       {...framer_modal}
@@ -18,10 +19,18 @@ export const FontModal = () => {
             className="border-b last-of-type:border-none dark:border-dark-100 dark:border-b-2"
           >
             <button
-              className={cn('capitalize p-5 w-full flex ', className)}
+              className={cn(
+                'capitalize p-5 w-full flex justify-between items-center',
+                className,
+              )}
               onClick={() => setFont(item)}
             >
-              {fontCategory}
+              <span>{fontCategory}</span>
+              {font === item && (
+                <span>
+                  <BsCheckLg />
+                </span>
+              )}
             </button>
           </li>
         )
