@@ -1,3 +1,9 @@
+import { SearchBox } from '../components'
+
 export const Home = () => {
-  return <div>Home</div>
+  return (
+    <div>
+      <SearchBox />
+    </div>
+  )
 }

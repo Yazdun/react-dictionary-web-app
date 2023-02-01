@@ -9,7 +9,7 @@ export const FontModal = () => {
   return (
     <motion.ul
       {...framer_modal}
-      className="absolute right-5 left-5 md:right-0 md:left-auto top-[5rem] md:top-10 border bg-light-100 dark:bg-dark-400 rounded-md shadow-sm min-w-[15rem] dark:border-2 dark:shadow-none dark:border-dark-100 "
+      className="absolute z-50 right-5 left-5 md:right-0 md:left-auto top-[5rem] md:top-10 border bg-light-100 dark:bg-dark-400 rounded-md shadow-sm min-w-[15rem] dark:border-2 dark:shadow-none dark:border-dark-100 "
     >
       {fontFamilies.map(item => {
         const { fontName, fontCategory, className } = item

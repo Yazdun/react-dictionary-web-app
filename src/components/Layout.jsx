@@ -9,7 +9,7 @@ export const Layout = () => {
   return (
     <div className={cn('max-w-2xl m-auto', font.className)}>
       <Navigation />
-      <main className="p-5">
+      <main className="px-5">
         <Outlet />
       </main>
     </div>

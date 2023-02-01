@@ -30,7 +30,7 @@ export function FontProvider({ children }) {
 
   return (
     <FontContext.Provider value={{ font, setFont, fontFamilies }}>
-      {children},
+      {children}
     </FontContext.Provider>
   )
 }
