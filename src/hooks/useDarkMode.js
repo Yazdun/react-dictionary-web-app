@@ -17,12 +17,12 @@ export function useDarkMode() {
     () => {
       if (enabled) {
         document.documentElement.classList.add('dark')
-        document.body.classList.add('bg-dark-900', 'text-white')
-        document.body.classList.remove('bg-light-200')
+        document.body.classList.add('bg-dark-400', 'text-white')
+        document.body.classList.remove('bg-light-100')
       } else {
         document.documentElement.classList.remove('dark')
-        document.body.classList.add('bg-light-200')
-        document.body.classList.remove('bg-dark-900', 'text-white')
+        document.body.classList.add('bg-light-100')
+        document.body.classList.remove('bg-dark-400', 'text-white')
       }
     },
     [enabled], // Only re-call effect when value changes
