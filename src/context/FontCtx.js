@@ -1,5 +1,5 @@
 import useLocalStorage from '@rehooks/local-storage'
-import { useContext, createContext, useEffect } from 'react'
+import { useContext, createContext } from 'react'
 
 const FontContext = createContext()
 
@@ -23,7 +23,10 @@ const fontFamilies = [
 
 export function FontProvider({ children }) {
   const currentFont = localStorage.getItem('font')
-  const [font, setFont] = useLocalStorage('font', currentFont)
+  const [font, setFont] = useLocalStorage(
+    'font',
+    currentFont || fontFamilies[0],
+  )
 
   return (
     <FontContext.Provider value={{ font, setFont, fontFamilies }}>
