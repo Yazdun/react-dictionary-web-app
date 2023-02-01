@@ -1,7 +1,7 @@
 import { useFont } from '../context'
 import cn from 'classnames'
-import { motion } from 'framer-motion'
-import { framer_modal } from '../framer'
+import { AnimatePresence, motion } from 'framer-motion'
+import { framer_font_check, framer_modal } from '../framer'
 import { BsCheckLg } from 'react-icons/bs'
 
 export const FontModal = () => {
@@ -26,11 +26,13 @@ export const FontModal = () => {
               onClick={() => setFont(item)}
             >
               <span>{fontCategory}</span>
-              {font === item && (
-                <span>
-                  <BsCheckLg />
-                </span>
-              )}
+              <AnimatePresence mode="wait" initial={false}>
+                {font === item && (
+                  <motion.span {...framer_font_check} key={item.fontCategory}>
+                    <BsCheckLg className="text-green-400" />
+                  </motion.span>
+                )}
+              </AnimatePresence>
             </button>
           </li>
         )
