@@ -1,6 +1,5 @@
 import { Outlet } from 'react-router-dom'
 import { Navigation } from './'
-import cn from 'classnames'
 import { useFont } from '../context'
 
 export const Layout = () => {
@@ -9,7 +8,7 @@ export const Layout = () => {
   return (
     <div className={font.className}>
       <Navigation />
-      <main>
+      <main className="pb-10">
         <Outlet />
       </main>
     </div>
