@@ -4,16 +4,21 @@ import { ImSpinner2 } from 'react-icons/im'
 import { useDictionary } from '../context'
 import { useScrollDirection } from '../hooks'
 import cn from 'classnames'
+import { useSearchParams } from 'react-router-dom'
 
 export const SearchBox = () => {
   const [timer, setTimer] = useState(null)
   const { setWord, word, isLoading } = useDictionary()
   const scrollDirection = useScrollDirection()
+  const [searchParams, setSearchParams] = useSearchParams({})
 
   const inputChanged = e => {
     clearTimeout(timer)
     const newTimer = setTimeout(() => {
       setWord(e.target.value)
+      e.target.value
+        ? setSearchParams({ word: e.target.value })
+        : setSearchParams({})
     }, 500)
     setTimer(newTimer)
   }
@@ -33,6 +38,7 @@ export const SearchBox = () => {
             className="w-full p-3 rounded-md md:p-5 bg-light-200 dark:bg-dark-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-100"
             placeholder="start typing ..."
             onChange={inputChanged}
+            defaultValue={word}
           />
           <div className="absolute top-0 bottom-0 right-0 p-3 rounded-md md:p-5 bg-light-200 dark:bg-dark-300">
             {word && isLoading ? (
