@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  🐼 React FC ErrorFallback
+|
+|  🐯 Purpose: USED TO DISPLAY ERRORS IN BROKEN COMPONENTS
+|
+|  🐸 Returns:  JSX
+*-------------------------------------------------------------------*/
+
 export const ErrorFallback = () => {
   return (
     <div className="p-5 font-medium text-center text-red-600 border-2 border-red-600 border-dashed md:py-10 dark:text-red-500 dark:border-red-500 rounded-xl">

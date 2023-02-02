@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  🐼 React Hook useDarkMode
+|
+|  🐯 Purpose: TOGGLE LIGHT MODE / DARK MODE
+|
+|  🐸 Returns: THEME STATE AND A FUNCTION TO CHANGE THE APP'S THEME
+*-------------------------------------------------------------------*/
+
 import { useEffect } from 'react'
 import { useMedia, useLocalStorage } from './'
 

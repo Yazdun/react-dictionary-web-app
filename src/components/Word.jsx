@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  🐼 React FC Word
+|
+|  🐯 Purpose: DISPLAYS THE SEARCHED WORD'S TITLE AND INFORMATION
+|
+|  🐸 Returns:  JSX
+*-------------------------------------------------------------------*/
+
 import { Title, SubSection, ErrorFallback } from './'
 import { motion } from 'framer-motion'
 import { framer_opacity } from '../framer'

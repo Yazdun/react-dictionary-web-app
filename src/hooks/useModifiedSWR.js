@@ -1,7 +1,14 @@
+/*-------------------------------------------------------------------
+|  🐼 React Hook useModifiedSWR
+|
+|  🐯 Purpose: HANDLES API REQUESTS
+|
+|  🐸 Returns: DIFFERENT STATES OF AN API REQUEST AND API DATA
+*-------------------------------------------------------------------*/
+
 import axios from 'axios'
 import useSWR from 'swr'
 import { baseURL } from '../api/_api'
-import { useDictionary } from '../context'
 
 export function useModifiedSWR(url) {
   const APIClient = axios.create({ baseURL })

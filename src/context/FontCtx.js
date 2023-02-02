@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  🐼 React CTX FontContext
+|
+|  🐯 Purpose: TOGGLE APP FONTS GLOBALLY
+|
+|  🐸 Returns: CTX PROVIDER / CTX HOOK
+*-------------------------------------------------------------------*/
+
 import useLocalStorage from '@rehooks/local-storage'
 import { useContext, createContext } from 'react'
 

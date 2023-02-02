@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  🐼 React Hook useOnClickOutside
+|
+|  🐯 Purpose: FINDS OUT IF USER HAS CLICKED OUTSIDE AN ELEMENT OR NOT
+|
+|  🐸 Returns:  -
+*-------------------------------------------------------------------*/
+
 import { useEffect } from 'react'
 
 export function useOnClickOutside(ref, handler) {

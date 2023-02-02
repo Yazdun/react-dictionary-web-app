@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  🐼 React FC ThemeToggle
+|
+|  🐯 Purpose: TOGGLE LIGHT MODE / DARK MODE
+|
+|  🐸 Returns:  JSX
+*-------------------------------------------------------------------*/
+
 import { FaRegMoon } from 'react-icons/fa'
 import { useTheme } from '../context'
 

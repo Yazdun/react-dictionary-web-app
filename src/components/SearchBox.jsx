@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  🐼 React FC SearchBox
+|
+|  🐯 Purpose: ALLOWS USERS TO SEARCH FOR DIFFERENT WORDS
+|
+|  🐸 Returns:  JSX
+*-------------------------------------------------------------------*/
+
 import { useState } from 'react'
 import { HiSearch } from 'react-icons/hi'
 import { ImSpinner2 } from 'react-icons/im'

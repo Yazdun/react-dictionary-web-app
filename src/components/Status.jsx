@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  🐼 React FC NoWords / NotFound
+|
+|  🐯 Purpose: DISPLAYS BANNERS WHEN THERE IS NO WORD OR NO API DATA
+|
+|  🐸 Returns:  JSX
+*-------------------------------------------------------------------*/
+
 import Lottie from 'lottie-react'
 import yellyEmojiNo from '../lotties/yelly-emoji-no.json'
 import yellyEmojiYep from '../lotties/yelly-emoji-yep.json'

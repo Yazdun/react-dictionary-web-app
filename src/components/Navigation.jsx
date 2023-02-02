@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  🐼 React FC Navigation
+|
+|  🐯 Purpose: APP NAVIGATION BAR
+|
+|  🐸 Returns:  JSX
+*-------------------------------------------------------------------*/
+
 import { FontToggle, ThemeToggle } from './index'
 
 export const Navigation = () => {
