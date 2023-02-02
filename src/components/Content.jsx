@@ -14,8 +14,11 @@ export const Content = () => {
   }
 
   return (
-    <div className="mt-5">
-      <h1 className="text-4xl font-bold capitalize">{data[0]?.word}</h1>
+    <div>
+      <div>
+        <h1 className="text-4xl font-bold capitalize">{data[0].word}</h1>
+        <p className="text-primary-100">{data[0].phonetic}</p>
+      </div>
     </div>
   )
 }

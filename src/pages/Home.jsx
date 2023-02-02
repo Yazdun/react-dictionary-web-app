@@ -3,7 +3,7 @@ import { useDictionary } from '../context'
 
 export const Home = () => {
   return (
-    <div className="flex flex-col gap-5">
+    <div className="flex flex-col gap-10">
       <SearchBox />
       <Content />
     </div>
