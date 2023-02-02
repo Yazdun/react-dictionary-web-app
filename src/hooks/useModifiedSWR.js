@@ -1,8 +1,9 @@
 import axios from 'axios'
 import useSWR from 'swr'
 import { baseURL } from '../api/_api'
+import { useDictionary } from '../context'
 
-export function useModifiedSWR(url, options = {}) {
+export function useModifiedSWR(url) {
   const APIClient = axios.create({ baseURL })
 
   const fetcher = url => APIClient.get(url).then(res => res.data)
