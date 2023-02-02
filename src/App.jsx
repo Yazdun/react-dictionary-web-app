@@ -1,10 +1,11 @@
 import { appRoutes } from './pages'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import { Layout } from './components'
+import { MotionConfig } from 'framer-motion'
 
 function App() {
   return (
-    <div>
+    <MotionConfig reducedMotion="user">
       <Routes>
         <Route element={<Layout />}>
           {appRoutes.map(route => {
@@ -14,7 +15,7 @@ function App() {
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>
-    </div>
+    </MotionConfig>
   )
 }
 
