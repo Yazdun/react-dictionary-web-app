@@ -1,7 +1,6 @@
 import React from 'react'
 import { useDictionary } from '../context'
-import { NotFound, NoWords } from './Status'
-import { SubSection } from './SubSection'
+import { NotFound, NoWords, Title, SubSection } from './'
 
 export const Word = () => {
   const { data, word, isLoading } = useDictionary()
@@ -16,13 +15,7 @@ export const Word = () => {
 
   return (
     <div className="flex flex-col gap-10 px-5 custom_container">
-      <div>
-        <h1 className="text-4xl font-bold capitalize">{data[0].word}</h1>
-        <p className="text-primary-100">
-          {data[0].phonetic || data[0].phonetics[1].text}
-        </p>
-      </div>
-
+      <Title />
       {data[0].meanings.map((item, idx) => {
         return <SubSection key={item.partOfSpeech + idx} data={item} />
       })}
