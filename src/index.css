@@ -25,5 +25,5 @@
 
 /* CUSTOM CLASSES */
 .custom_container {
-  @apply max-w-2xl m-auto;
+  @apply w-full max-w-2xl m-auto;
 }

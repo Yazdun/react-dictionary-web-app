@@ -37,7 +37,7 @@ export const Title = () => {
       <button
         onClick={playAudio}
         className={cn(
-          'w-16 h-16 bg-[#E8D0FA] transition-all duration-300 disabled:cursor-not-allowed dark:bg-[#2D153F] rounded-full flex justify-center items-center',
+          'w-16 h-16 bg-[#E8D0FA] transition-transform duration-300 disabled:cursor-not-allowed dark:bg-[#2D153F] rounded-full flex justify-center items-center',
           isPlaying && 'opacity-60 scale-110',
         )}
         disabled={isPlaying}

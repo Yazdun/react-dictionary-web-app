@@ -5,6 +5,10 @@ import { NotFound, NoWords, Title, SubSection } from './'
 export const Word = () => {
   const { data, word, isLoading } = useDictionary()
 
+  if (isLoading && word) {
+    return
+  }
+
   if (!word) {
     return <NoWords />
   }
