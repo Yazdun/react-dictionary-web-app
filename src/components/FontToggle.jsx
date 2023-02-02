@@ -24,7 +24,11 @@ export const FontToggle = () => {
 
   return (
     <div className="md:relative" ref={ref}>
-      <button className="flex items-center gap-2 capitalize" onClick={toggle}>
+      <button
+        className="flex items-center gap-2 capitalize"
+        aria-label={modal ? 'close font selection' : 'open font selection'}
+        onClick={toggle}
+      >
         <span className={font.className}>{font.fontCategory}</span>
         <GoChevronDown
           className={cn(

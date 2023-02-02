@@ -21,7 +21,7 @@ export const FontModal = () => {
     >
       {fontFamilies.map(item => {
         const { fontName, fontCategory, className } = item
-
+        const isActive = font?.fontName === item?.fontName
         return (
           <li
             key={fontName}
@@ -32,11 +32,16 @@ export const FontModal = () => {
                 'capitalize p-5 w-full flex justify-between items-center',
                 className,
               )}
+              aria-label={
+                isActive
+                  ? `${fontCategory} is the active font`
+                  : `set ${fontCategory} as the active font`
+              }
               onClick={() => setFont(item)}
             >
               <span>{fontCategory}</span>
               <AnimatePresence mode="wait" initial={false}>
-                {font?.fontName === item?.fontName && (
+                {isActive && (
                   <motion.span {...framer_font_check} key={item.fontCategory}>
                     <BsCheckLg className="text-green-400" />
                   </motion.span>

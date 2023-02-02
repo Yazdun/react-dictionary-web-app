@@ -41,7 +41,11 @@ export const SearchBox = () => {
     >
       <div className="px-5 custom_container">
         <div className="relative">
+          <label htmlFor="search" className="sr-only">
+            enter the word to search
+          </label>
           <input
+            id="search"
             type="text"
             className="w-full p-3 rounded-md md:p-5 bg-light-200 dark:bg-dark-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-100"
             placeholder="start typing ..."
