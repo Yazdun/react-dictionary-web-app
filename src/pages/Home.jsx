@@ -1,11 +1,10 @@
-import { Content, SearchBox } from '../components'
-import { useDictionary } from '../context'
+import { Word, SearchBox, SubSection } from '../components'
 
 export const Home = () => {
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col gap-5">
       <SearchBox />
-      <Content />
+      <Word />
     </div>
   )
 }
