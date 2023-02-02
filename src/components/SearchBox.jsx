@@ -19,7 +19,7 @@ export const SearchBox = () => {
       e.target.value
         ? setSearchParams({ word: e.target.value })
         : setSearchParams({})
-    }, 500)
+    }, 900)
     setTimer(newTimer)
   }
 

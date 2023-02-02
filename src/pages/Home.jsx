@@ -3,7 +3,7 @@ import { Word, SearchBox, NoWords, NotFound } from '../components'
 import { useDictionary } from '../context'
 
 export const Home = () => {
-  const { data, word } = useDictionary()
+  const { data, word, isLoading } = useDictionary()
   return (
     <div className="flex flex-col gap-5">
       <SearchBox />
@@ -13,7 +13,7 @@ export const Home = () => {
         ) : !word ? (
           <NoWords key="noooo" />
         ) : (
-          <NotFound key="yeeees" />
+          !isLoading && <NotFound key="yeeees" />
         )}
       </AnimatePresence>
     </div>
