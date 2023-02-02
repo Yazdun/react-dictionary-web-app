@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  🐼 APP ROUTES
+|
+|  🐯 Purpose: AN ARRAY WHICH CONTAINS ALL THE APP'S ROUTES
+|
+|  🐸 Returns:  -
+*-------------------------------------------------------------------*/
+
 import { Home } from './index'
 
 export const appRoutes = [
