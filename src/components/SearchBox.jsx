@@ -21,7 +21,7 @@ export const SearchBox = () => {
   return (
     <div
       className={cn(
-        'sticky top-0 z-40 py-5 bg-light-100 dark:bg-transparent dark:backdrop-blur-xl',
+        'sticky top-0 z-40 py-5 bg-light-100 dark:bg-dark-400 md:dark:bg-transparent md:dark:backdrop-blur-xl',
         scrollDirection > 100 &&
           'border-b shadow-sm dark:shadow-none dark:border-b-dark-100',
       )}

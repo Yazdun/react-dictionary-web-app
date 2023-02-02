@@ -6,8 +6,6 @@ import { SubSection } from './SubSection'
 export const Word = () => {
   const { data, word, isLoading } = useDictionary()
 
-  console.log(data)
-
   if (!word) {
     return <NoWords />
   }
@@ -25,8 +23,8 @@ export const Word = () => {
         </p>
       </div>
 
-      {data[0].meanings.map(item => {
-        return <SubSection key={item.partOfSpeech} data={item} />
+      {data[0].meanings.map((item, idx) => {
+        return <SubSection key={item.partOfSpeech + idx} data={item} />
       })}
     </div>
   )
