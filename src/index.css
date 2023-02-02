@@ -22,3 +22,8 @@
 .font_lora {
   font-family: 'Lora', serif;
 }
+
+/* CUSTOM CLASSES */
+.custom_container {
+  @apply max-w-2xl m-auto;
+}

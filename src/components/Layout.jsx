@@ -7,9 +7,9 @@ export const Layout = () => {
   const { font } = useFont()
 
   return (
-    <div className={cn('max-w-2xl m-auto', font.className)}>
+    <div className={font.className}>
       <Navigation />
-      <main className="px-5">
+      <main>
         <Outlet />
       </main>
     </div>

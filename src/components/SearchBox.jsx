@@ -17,7 +17,7 @@ export const SearchBox = () => {
 
   return (
     <div className="sticky top-0 z-40 py-5 bg-light-100 dark:bg-dark-400">
-      <div className="relative">
+      <div className="relative px-5 custom_container">
         <input
           type="text"
           className="w-full p-3 rounded-md md:p-5 bg-light-200 dark:bg-dark-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-100"

@@ -17,7 +17,7 @@ export const Word = () => {
   }
 
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col gap-10 px-5 custom_container">
       <div>
         <h1 className="text-4xl font-bold capitalize">{data[0].word}</h1>
         <p className="text-primary-100">
