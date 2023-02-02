@@ -1,9 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { useDictionary } from '../context'
 import { HiSpeakerWave } from 'react-icons/hi2'
 import cn from 'classnames'
-import { framer_opacity } from '../framer'
-import { motion } from 'framer-motion'
 
 export const Title = ({ data }) => {
   const audio = data[0].phonetics.find(item => item.audio.length > 1)
