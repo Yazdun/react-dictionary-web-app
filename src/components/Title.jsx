@@ -2,9 +2,10 @@ import React, { useEffect, useRef, useState } from 'react'
 import { useDictionary } from '../context'
 import { HiSpeakerWave } from 'react-icons/hi2'
 import cn from 'classnames'
+import { framer_opacity } from '../framer'
+import { motion } from 'framer-motion'
 
-export const Title = () => {
-  const { data } = useDictionary()
+export const Title = ({ data }) => {
   const audio = data[0].phonetics.find(item => item.audio.length > 1)
   const audioRef = useRef(null)
   const [timer, setTimer] = useState(null)
@@ -23,8 +24,6 @@ export const Title = () => {
     }, audioRef.current.duration * 1000)
     setTimer(newTimer)
   }
-
-  console.log(isPlaying)
 
   return (
     <div className="flex items-center justify-between">
