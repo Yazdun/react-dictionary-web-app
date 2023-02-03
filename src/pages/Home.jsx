@@ -15,7 +15,7 @@ export const Home = () => {
   return (
     <div className="flex flex-col gap-5">
       <SearchBox />
-      <AnimatePresence mode="wait">
+      <AnimatePresence mode="wait" initial={false}>
         {data ? (
           <Word key={word} data={data} />
         ) : !word ? (
