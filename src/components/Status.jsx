@@ -28,6 +28,9 @@ export const NoWords = () => {
           Hello there ! You can start using this free online dictionary by
           typing anything in the above searchbox.
         </p>
+        <p className="px-6 py-3 font-medium text-purple-600 bg-purple-100 rounded-full dark:bg-[#2D153F] dark:text-purple-400">
+          #Woman_Life_Freedom
+        </p>
       </div>
     </Wrapper>
   )
