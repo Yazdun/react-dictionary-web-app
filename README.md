@@ -27,7 +27,7 @@
 
 </div>
 
-![Preview of the solution](./public/og.jpg)
+![Preview of the solution](./public/OG.jpg)
 
 ## About the project
 
