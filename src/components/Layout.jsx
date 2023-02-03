@@ -15,8 +15,11 @@ export const Layout = () => {
 
   return (
     <div className={font.className}>
+      <a href="#main" className="skip-to-main-content-link">
+        Skip to main content
+      </a>
       <Navigation />
-      <main className="pb-10">
+      <main className="pb-10" id="main">
         <Outlet />
       </main>
     </div>

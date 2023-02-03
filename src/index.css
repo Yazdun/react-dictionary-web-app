@@ -28,6 +28,22 @@
   @apply w-full max-w-2xl m-auto;
 }
 
+/* SKIP TO MAIN CONTENT LINK */
+.skip-to-main-content-link {
+  position: absolute;
+  left: -9999px;
+  top: 20px;
+  z-index: 999;
+  opacity: 0;
+  @apply p-5 rounded-md bg-light-100 dark:bg-dark-400;
+}
+
+.skip-to-main-content-link:focus {
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+}
+
 /* REMOVE ANIMATIONS FOR PEOPLE WHO'VE TURNED THEM OFF */
 @media (prefers-reduced-motion: reduce) {
   *,
