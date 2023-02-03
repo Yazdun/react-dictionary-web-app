@@ -37,14 +37,26 @@ export const NoWords = () => {
 }
 
 export const NotFound = () => {
-  const { word } = useDictionary()
+  const { errorStatus } = useDictionary()
+  const isServerError = errorStatus === 500
   return (
     <Wrapper>
       <Lottie animationData={yellyEmojiNo} loop={true} style={lottieStyles} />
-      <h1 className="text-xl font-bold">Not Found</h1>
+      <h1 className="text-xl font-bold">
+        {isServerError ? 'Server Error' : 'Not Found'}
+      </h1>
       <p className="text-light-400 dark:text-gray-400 max-w-[30rem] m-auto">
-        Sorry ! We found no result for the word you searched for in our
-        dictionary.
+        {isServerError ? (
+          <span>
+            Sorry ! There is something wrong with our servers and we are working
+            on it, please try again in a few minutes
+          </span>
+        ) : (
+          <span>
+            Sorry ! We found no result for the word you searched for in our
+            dictionary.
+          </span>
+        )}
       </p>
     </Wrapper>
   )

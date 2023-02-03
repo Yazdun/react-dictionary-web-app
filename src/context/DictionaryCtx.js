@@ -30,10 +30,20 @@ export function DictionaryProvider({ children }) {
     })
   }, [word])
 
-  const { data, isLoading } = useModifiedSWR(word ? _getMeaning(word) : null)
+  const { data, isLoading, isError } = useModifiedSWR(
+    word ? _getMeaning(word) : null,
+  )
 
   return (
-    <DictionaryContext.Provider value={{ word, setWord, data, isLoading }}>
+    <DictionaryContext.Provider
+      value={{
+        word,
+        setWord,
+        data,
+        isLoading,
+        errorStatus: isError?.response?.status,
+      }}
+    >
       {children}
     </DictionaryContext.Provider>
   )
