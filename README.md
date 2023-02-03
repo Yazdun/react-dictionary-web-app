@@ -12,17 +12,17 @@
   <p align="center">
     Frontend Mentor Challenge
     <br />
-    <a href=""><strong>View on frontend mentor »</strong></a>
+    <a href="https://www.frontendmentor.io/solutions/dictionary-web-application-TvJwqrA3-Z"><strong>View on frontend mentor »</strong></a>
     <br />
     <br />
-    <a href="">View Demo</a>
+    <a href="https://dictionaary.vercel.app/">View Demo</a>
     ·
     <a href="https://github.com/Yazdun/react-dictionary-web-app/issues">Report Bug</a>
     ·
     <a href="https://github.com/Yazdun/react-dictionary-web-app/issues">Request Feature</a>
   </p>
 
-[![Website](https://img.shields.io/website?down_color=critical&down_message=down&label=netlify&logo=netlify&style=for-the-badge&up_color=brightengreen&up_message=active&url=https%3A%2F%2Fmakerfem.netlify.app/%2F)](LIVE)
+[![Website](https://img.shields.io/website?down_color=critical&down_message=down&label=netlify&logo=netlify&style=for-the-badge&up_color=brightengreen&up_message=active&url=https%3A%2F%2Fdictionaary.vercel.app/%2F)](LIVE)
 ![Website](https://img.shields.io/website?down_color=blueviolet&down_message=INTERMEDIATE&label=difficulty&logo=frontendmentor&style=for-the-badge&up_color=orange&up_message=INTERMEDIATE&url=https%3A%2F%2Fwww.frontendmentor.io%2F)
 
 </div>
